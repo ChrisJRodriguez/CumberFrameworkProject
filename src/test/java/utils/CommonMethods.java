@@ -42,7 +42,7 @@ public class CommonMethods extends PageInitializer{
         }
 
         //open browser, initiate an implict wait, open site
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.get(ConfigReader.read("url"));
         initializePageObjects();
